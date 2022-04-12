@@ -1,0 +1,32 @@
+body {
+    padding-top: 150px;
+}
+
+.book_list a{
+    text-decoration: none;
+}
+
+.navigation_list{
+    
+    margin-top: 150px;
+}
+.navigation_list h3{
+    margin: 0 auto;
+}
+
+.lien{
+    display: inline-block;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    border:1px solid black;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 1.4em;
+    border-radius: 5px;
+    
+    
+}
+.lien a{
+    text-decoration: none;
+}

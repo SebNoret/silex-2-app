@@ -1,0 +1,29 @@
+{% extends "layout.html.twig"%}
+
+{% block  title %}MyBooks | {{ book.title }}{% endblock %}
+  
+{% block content %}
+    
+            <h2>{{book.title}}</h2>
+                    <ul>
+                        <li>Auteur: {{book.author.authFirstName}} {{book.author.authLastName}}</li>
+                        <li>ISBN: {{book.isbn}}</li>         
+                    </ul>            
+                 {{book.summary}}<br>
+                 
+         
+                 
+            <div class="row">     
+            <div class="col-md-offset-4 navigation_list">
+                                    
+                    <ul class="pagination">    
+                        
+                        <li><a href="{{path('details',{'id': previous})}}">precedent</a></li>
+                        <li><a href="{{path('details',{'id': next})}}">suivant</a></li>
+                    </ul>    
+            </div>
+                    
+            </div>     
+{%endblock%}
+
+
